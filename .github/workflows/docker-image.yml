@@ -29,7 +29,7 @@ jobs:
           context: ./BACKEND
           file: ./BACKEND/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/2300033901-exam-backend-3:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/2300033901-exam-backend-4:latest
           platforms: linux/amd64,linux/arm64
 
       - name: Build and push frontend image
@@ -38,5 +38,5 @@ jobs:
           context: ./FRONTEND
           file: ./FRONTEND/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/2300033901-exam-frontend-3:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/2300033901-exam-frontend-4:latest
           platforms: linux/amd64,linux/arm64
